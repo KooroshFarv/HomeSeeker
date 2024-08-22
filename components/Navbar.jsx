@@ -1,5 +1,5 @@
 'use client'
-import Image from 'next/image';
+// import Image from 'next/image';
 import Link from 'next/link';
 import { FaGoogle} from 'react-icons/fa'
 import { useState } from 'react';
@@ -9,7 +9,7 @@ import { usePathname } from 'next/navigation';
 const Navbar = () => {
   const [isMobileMenuOpen, setIsmobileMenuOpen ] = useState(false) 
   const [isProfileMenuOpen, setIsProfileMenuOpen ] = useState(false) 
-  const [isLoggedIn, setIsLoggedIn ] = useState(true) 
+  const [isLoggedIn, setIsLoggedIn ] = useState(false) 
 
   const pathname = usePathname()
   return (
@@ -49,11 +49,11 @@ const Navbar = () => {
         >
           {/* <!-- Logo --> */}
           <Link className="flex flex-shrink-0 items-center" href="/">
-            <Image
+            {/* <Image
               className="h-10 w-auto"
               // src={/}
               alt="PropertyPulse"
-            />
+            /> */}
 
             <span className="hidden md:block text-white text-2xl font-bold ml-2"
               >Houseeker</span >
@@ -81,7 +81,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* <!-- Right Side Menu (Logged Out) --> */}
+         {/* Right Side Menu (Logged Out)  */}
         { !isLoggedIn && (
             <div className="hidden md:block md:ml-6">
             <div className="flex items-center">
@@ -143,11 +143,11 @@ const Navbar = () => {
                >
                  <span className="absolute -inset-1.5"></span>
                  <span className="sr-only">Open user menu</span>
-                 <img
+                 {/* <img
                    className="h-8 w-8 rounded-full"
                    src="images/profile.png"
                    alt=""
-                 />
+                 /> */}
                </button>
              </div>
  

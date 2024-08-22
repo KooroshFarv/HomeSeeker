@@ -1,13 +1,15 @@
 import React from 'react'
 import Link from 'next/link'
 import Hero from 'components/hero'
-import infoBoxes from 'components/infoBoxes'
+import InfoBoxes from 'components/InfoBoxes'
+import Footer from 'components/Footer'
 
 const HomePage = () => {
   return (
     <>
         < Hero />
-        < infoBoxes />
+        < InfoBoxes />
+        < Footer />
     </>
   )
 }
