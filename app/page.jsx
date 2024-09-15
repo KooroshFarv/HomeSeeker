@@ -4,8 +4,10 @@ import Hero from 'components/hero'
 import InfoBoxes from 'components/InfoBoxes'
 import Footer from 'components/Footer'
 import HomeProperties from 'components/homeProperties'
+import connectdb from 'config/database'
 
 const HomePage = () => {
+  connectdb();
   return (
     <>
         < Hero />

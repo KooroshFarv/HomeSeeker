@@ -11,7 +11,7 @@ const PropertiesPage = () => {
             {
               properties.map((property) => (
                <PropertyCard key={property._id}  property={property}/>
-              ) )
+              ))
             }
           </div>
         )}
