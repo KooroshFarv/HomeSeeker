@@ -8,53 +8,45 @@ const UserSchema = new Schema(
         required : true
     },
     name : {
-        type : string,
-        required : true
-    },
-    name : {
-        type : string,
+        type : String,
         required : true
     },
     description : {
-        type : string,
+        type : String,
     },
     location : {
-        street : string,
-        city : string,
-        state : string,
-        zipcode : string
-    },
-    name : {
-        type : number,
-        required : true
+        street : String,
+        city : String,
+        state : String,
+        zipcode : String
     },
     bath : {
-        type : number,
+        type : Number,
         required : true
     },
     square_feet : {
-        type : number,
+        type : Number,
         required : true
     },
     amenities: [
         {
-            type : string,
+            type : String,
             
         }
     ],
     rates : {
-       nightly : number,
-       weekley : number,
-       monthly : number 
+       nightly : Number,
+       weekley : Number,
+       monthly : Number 
     },
     seller_info : {
-        name : string,
-        email : string,
-        photne : number
+        name : String,
+        email : String,
+        photne : Number
     } ,
     images : [
         {
-            type : string
+            type : String
         }
     ],
     is_featured : {
@@ -67,6 +59,6 @@ const UserSchema = new Schema(
 });
 
 
-const Property = models.Property || model('{Property}', UserSchema )
+const Property = models.Property || model('Property', UserSchema )
 
-export default Useer;
+export default Property;
